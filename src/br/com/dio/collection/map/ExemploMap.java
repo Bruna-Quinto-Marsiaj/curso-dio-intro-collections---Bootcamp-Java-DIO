@@ -39,7 +39,7 @@ public class ExemploMap {
 //        System.out.println("Exiba o terceiro modelo adicionado: ");//no map e no set n tem método que possa mostrar***
 
         System.out.println("Exiba os modelos: ");
-        Set<String> modelos = carrosPopulares.keySet();//keyset retorna set
+        Set<String> modelos = carrosPopulares.keySet();//keySet retorna set
         System.out.println(modelos);
 
         System.out.println("Exiba os consumos dos carros: ");
@@ -59,9 +59,9 @@ public class ExemploMap {
             }
         }
 
-        System.out.println("Exiba o modelo menos econômico e seu consumo: " );
+        System.out.println("Exiba o modelo menos econômico e seu consumo: " );// trabalhar c chave e valor separadamente
 
-        Double consumoMenosEficiente = Collections.min(carrosPopulares.values());
+        Double consumoMenosEficiente = Collections.min(carrosPopulares.values());//retorna Collection
         String modeloMenosEficiente = "";
         for (Map.Entry<String, Double> entry: carrosPopulares.entrySet()) {
             if(entry.getValue().equals(consumoMenosEficiente)) {
